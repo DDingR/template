@@ -1,0 +1,80 @@
+stages:
+  - Extraction symbols
+  - Compilation
+  - deploy
+
+pages:
+  image: alpine:latest
+  stage: deploy
+  only: 
+    refs:
+      - master
+  script:
+    - mv ./LMRES_Table_of_Symbols_Generation.pdf ./public/LMRES_Table_of_Symbols.pdf
+    - mv ./LMRES_Howto_tikzDrawingLibrary.pdf ./public/LMRES_Howto_tikzDrawingLibrary.pdf
+    - mv ./LMRES_Howto_tikzPlottingLibrary.pdf ./public/LMRES_Howto_tikzPlottingLibrary.pdf
+    - mv ./LMRES_Howto_write_scientific_documents.pdf ./public/LMRES_Howto_write_scientific_documents.pdf
+    - mv ./LMRES_Howto_give_feedback.pdf ./public/LMRES_Howto_give_feedback.pdf
+  artifacts:
+    paths:
+      - public
+
+extraction_of_symbol:
+  image: python:3.7
+  stage: Extraction symbols
+  script:
+  - python3 ./LMRES_Table_of_Symbols_Extraction.py
+  artifacts:
+    paths:
+      - LMRES_Table_of_Symbols.tex
+    expire_in: 1 day
+    
+compile_symbols_pdf:
+  image: texlive/texlive:latest
+  stage: Compilation
+  script:
+    - latexmk -pdf LMRES_Table_of_Symbols_Generation.tex
+  artifacts:
+    paths:
+      - LMRES_Table_of_Symbols_Generation.pdf
+    expire_in: 1 day    
+
+compile_howTo_tikz_draw_pdf:
+  image: texlive/texlive:latest
+  stage: Compilation
+  script:
+    - latexmk -pdf LMRES_Howto_tikzDrawingLibrary.tex
+  artifacts:
+    paths:
+      - LMRES_Howto_tikzDrawingLibrary.pdf
+    expire_in: 1 day
+
+compile_howTo_tikz_plot_pdf:
+  image: texlive/texlive:latest
+  stage: Compilation
+  script:
+    - latexmk -pdf LMRES_Howto_tikzPlottingLibrary.tex
+  artifacts:
+    paths:
+      - LMRES_Howto_tikzPlottingLibrary.pdf
+    expire_in: 1 day
+
+compile_howTo_feedback_pdf:
+  image: texlive/texlive:latest
+  stage: Compilation
+  script:
+    - latexmk -pdf LMRES_Howto_give_feedback.tex
+  artifacts:
+    paths:
+      - LMRES_Howto_give_feedback.pdf
+    expire_in: 1 day
+
+compile_howTo_write_pdf:
+  image: texlive/texlive:latest
+  stage: Compilation
+  script:
+    - latexmk -pdf LMRES_Howto_write_scientific_documents.tex
+  artifacts:
+    paths:
+      - LMRES_Howto_write_scientific_documents.pdf
+    expire_in: 1 day
