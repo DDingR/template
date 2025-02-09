@@ -1,37 +1,45 @@
-% MY PACKAGES ===================================
-\usepackage{epsfig}
-\usepackage{lipsum}  
-\usepackage{kotex}
-% \usepackage{natbib}
-\usepackage{cite}
-\usepackage{amssymb}
-\usepackage{xcolor}
-\usepackage{enumitem}
-\newlist{steps}{enumerate}{1}
-\setlist[steps, 1]{label = Step \arabic*: }
-\usepackage{hyperref}
-\hypersetup{
-    linkbordercolor=blue,
-    filebordercolor=red,
-    citebordercolor = green,      
-    urlbordercolor=red,
-    %
-    % colorlinks=true,
-    % linkcolor=blue,
-    % filecolor=blue,
-    % citecolor = blue,      
-    % urlcolor=cyan,
- }
- \usepackage{algorithm}
- \usepackage{svg}
-
-% MY PACKAGES ===================================
+% ============================================
+%         General Packages
+% ============================================
+\usepackage{kotex}      % for Korean
+\usepackage{lipsum}     % for dummy text
+\usepackage{cite}   % for citation
+\usepackage{array}
 
 \usepackage{amsmath,amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\hypersetup{
+	pdftoolbar=false,        	% show Acrobat’s toolbar?
+	pdfmenubar=false,        	% show Acrobat’s menu?
+	pdffitwindow=false,     	% window fit to page when opened
+	pdfstartview={FitH},    	% fits the width of the page to the window
+	pdftitle={},    	% title
+	pdfauthor={},     	% author
+	%     pdfsubject={},   	% subject of the document
+	%     pdfcreator={},   	% creator of the document
+	%     pdfproducer={}, 	% producer of the document
+	%     pdfkeywords={keyword1, key2, key3}, % list of keywords
+	%     pdfnewwindow=true,      	% links in new PDF window
+	colorlinks=true,       	% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links (change box color with linkbordercolor)
+	citecolor=blue,       	% color of links to bibliography
+	filecolor=blue,      	% color of file links
+	urlcolor=blue		% color of external links
+}
+\usepackage{cleveref, autonum}
+
+\usepackage{algorithm}
 \usepackage{algorithmic}
-\usepackage{array}
-% \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+
+\usepackage{epsfig}
+\usepackage{xcolor}
+
+% MY PACKAGES ===================================
+
+\usepackage{svg}
 \usepackage{subfig}
+
 \usepackage{textcomp}
 \usepackage{stfloats}
 \usepackage{url}
@@ -39,3 +47,6 @@
 \usepackage{graphicx}
 \usepackage{multirow}
 \usepackage{multicol}
+
+
+\usepackage{amsthm}
