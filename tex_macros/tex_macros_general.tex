@@ -8,8 +8,8 @@
 \newtheorem{prop}{Property}
 
 \newcommand{\etal}{\textit{et~al.\ }}
-\newcommand\eg{\textit{e.g.\ }}
-\newcommand\ie{\textrm{i.e.\ }}
+\newcommand\eg{\textrm{e.g.,\ }}
+\newcommand\ie{\textrm{i.e.,\ }}
 \newcommand\R{\mathbb{R}}
 
 \newcommand*{\mv}[1]{\boldsymbol{#1}}
@@ -20,9 +20,21 @@
 \newcommand\bu{\mv u}
 
 \newcommand\der{\mathrm d}
+\newcommand*{\ddt}{
+    \frac{\der}{\der t}
+}
+\newcommand*{\ddtt}{
+    \tfrac{\der}{\der t}
+}
 \newcommand*{\ddfrac}[2]{
     \frac{\der {#1}}{\der {#2}}
 }
 \newcommand*{\ddtfrac}[2]{
     \tfrac{\der {#1}}{\der {#2}}
+}
+\newcommand*{\ppfrac}[2]{
+    \frac{\partial {#1}}{\partial {#2}}
+}
+\newcommand*{\pptfrac}[2]{
+    \tfrac{\partial {#1}}{\partial {#2}}
 }
