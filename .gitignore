@@ -44,4 +44,4 @@
 **/.idea/*
 **/slprj
 **/slprj/*
-/*.pdf
+# /*.pdf

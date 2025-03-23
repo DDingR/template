@@ -1,0 +1,41 @@
+
+\newcommand\R{\mathbb{R}}
+
+\newcommand*{\mv}[1]{\boldsymbol{#1}} % my vector
+\newcommand*{\mm}[1]{\boldsymbol{#1}} % my matrix
+\newcommand*{\norm}[1]{\lVert #1 \rVert} % euclidean norm
+
+% ============================================
+%         FRACTIONS
+% ============================================
+\newcommand\der{\mathrm d}
+\newcommand*{\ddt}{
+    \frac{\der}{\der t}
+}
+\newcommand*{\ddtt}{
+    \tfrac{\der}{\der t}
+}
+\newcommand*{\ddfrac}[2]{
+    \frac{\der {#1}}{\der {#2}}
+}
+\newcommand*{\ddtfrac}[2]{
+    \tfrac{\der {#1}}{\der {#2}}
+}
+\newcommand*{\ppfrac}[2]{
+    \frac{\partial {#1}}{\partial {#2}}
+}
+\newcommand*{\pptfrac}[2]{
+    \tfrac{\partial {#1}}{\partial {#2}}
+}
+
+% ============================================
+%         OPERATORS
+% ============================================
+\DeclareMathOperator{\myvec}{vec}
+\DeclareMathOperator{\myproj}{{Proj}}
+\DeclareMathOperator{\mysat}{sat}
+\DeclareMathOperator{\myrow}{row}
+\DeclareMathOperator{\mycol}{Col}
+\DeclareMathOperator{\mysym}{sym}
+\DeclareMathOperator{\mydiag}{diag}
+
