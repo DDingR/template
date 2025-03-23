@@ -4,22 +4,60 @@
 
 This template is made for following objectives:
 
--  Encourage lab members to use same notations.
+- Esay start to write draft with LaTex.
+- Encourage lab members to use same notations.
+- Fast coding with simple snippets.
 
 ## How to use
 
-[URL_Example](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) 
-```
-git submodule init
-
-
+Add this template using the following line.
+```bash
+$ git submodule add https://gitlab.com/dding_friends/dding_template.git    
 ```
 
-\newcommand*{\LMRESTEMPLATESPATH}{./templates}
+Initialize and update the lastest template.
+```bash
+$ git submodule init
+$ git submodule update
+```
 
+Insert the following line in your LaTex manuscript.
+```tex
+\def\pub{false} % true for publication, false for draft
+\newcommand*{\template}{dding_template}
+\input{\template/preamble/preamble_conf.tex}
+% \input{\template/preamble/preamble_article.tex}
+````
 
-%----------------------------------------------------------------------------
-% INCLUDE LMRES Preamble
-\input{LMRES_PathDefinitions_Template} % define local path to LMRES Templates
-\input{\LMRESTEMPLATESPATH/include_preambles/LMRES_Preamble}
-%----------------------------------------------------------------------------
+If you choose `true` argument for `\pub`, the hyperlinks will be colored.
+Every package, macro and symbol are defined in preamble files.
+Select as the type of your manuscript.
+
+## Table of Contents
+
+This template includes...
+```
+.
+├── IEEE
+├── README.md
+├── macros
+│   ├── macros_general.tex
+│   └── macros_math.tex
+├── packages
+│   └── packages_general.tex
+├── preamble
+│   ├── preamble_article.tex
+│   └── preamble_conf.tex
+├── refs.bib
+└── symbols
+    ├── symbols_NN.tex
+    ├── symbols_motor.tex
+    └── symbols_robot.tex
+```
+
+## Authors
+
+- [Ryu Myeongseok](https://gitlab.com/DDingR)
+
+## Version History
+
