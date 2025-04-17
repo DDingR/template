@@ -1,9 +1,19 @@
 % ============================================
 %         Robot Dynamics
 % ============================================
-\newcommand*{\q}{\mv{q}}
-\newcommand*{\dq}{\dot{\q}}
-\newcommand*{\ddq}{\ddot{\q}}
-\newcommand*{\qd}{\mv{q}_d}
-\newcommand*{\dqd}{\dot{\qd}}
-\newcommand*{\ddqd}{\ddot{\qd}}
+\newcommand*{\q}{\mv{q}}            % generalized coordinates
+\newcommand*{\dq}{\dot{\q}}         % generalized velocities
+\newcommand*{\ddq}{\ddot{\q}}       % generalized accelerations
+\newcommand*{\qd}{\mv{q}_d}         % desired generalized coordinates
+\newcommand*{\dqd}{\dot{\q}_d}      % desired generalized velocities
+\newcommand*{\ddqd}{\ddot{\q}_d}    % desired generalized accelerations
+
+\newcommand*{\fe}{\mv{r}}           % filtered error
+
+\newcommand*{\rbu}{\mv{\tau}}       % robot control input
+
+\newcommand*{\rbM}{\mm{M}}
+\newcommand*{\rbVm}{\mm{V}_m}
+\newcommand*{\rbF}{\mm{F}}
+\newcommand*{\rbG}{\mm{G}}
+\newcommand*{\rbd}{\mv{\tau}_d}
