@@ -58,6 +58,3 @@ This template includes...
 ## Authors
 
 - [Ryu Myeongseok](https://gitlab.com/DDingR)
-
-## Version History
-

@@ -2,11 +2,16 @@
 %         Robot Dynamics
 % ============================================
 \newcommand*{\q}{\mv{q}}            % generalized coordinates
-\newcommand*{\dq}{\dot{\q}}         % generalized velocities
-\newcommand*{\ddq}{\ddot{\q}}       % generalized accelerations
+% \newcommand*{\dq}{\dot{\q}}         % generalized velocities
+% \newcommand*{\ddq}{\ddot{\q}}       % generalized accelerations
+\newcommand*{\dq}{\ddtt{\q}}     % generalized velocities
+\newcommand*{\ddq}{\ddttddtt{\q}}   % generalized accelerations
+
 \newcommand*{\qd}{\mv{q}_d}         % desired generalized coordinates
-\newcommand*{\dqd}{\dot{\q}_d}      % desired generalized velocities
-\newcommand*{\ddqd}{\ddot{\q}_d}    % desired generalized accelerations
+% \newcommand*{\dqd}{\dot{\q}_d}      % desired generalized velocities
+% \newcommand*{\ddqd}{\ddot{\q}_d}    % desired generalized accelerations
+\newcommand*{\dqd}{\ddtt{\qd}}   % desired generalized velocities
+\newcommand*{\ddqd}{\ddttddtt{\qd}} % desired generalized accelerations
 
 \newcommand*{\fe}{\mv{r}}           % filtered error
 
