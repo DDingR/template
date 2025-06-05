@@ -7,6 +7,7 @@ OUTPUT:
 - diff.pdf
 
 - Myeongseok Ryu
+- dding_98@kaist.ac.kr
 - 2025.04.14
 """
 
