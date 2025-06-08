@@ -4,7 +4,18 @@ latexdiff.py
 - COMMIT2: old commit hash.
 
 OUTPUT:
-- diff.pdf
+- COMMIT1_COMMIT2.pdf
+
+VERSION HISTORY:
+- Version 1.0 (Date: 2025.04.14)
+    - Initial release of the LaTeX diff tool.
+    - Supports comparing LaTeX documents across Git commits.
+    - Generates a PDF file showing the differences.
+- Version 1.1 (Date: 2025.05.25)
+    - fix some bugs.
+- Version 1.2 (Date: 2025.06.08)
+    - The output file name is now COMMIT1_COMMIT2.pdf
+    - So, you can recognize which commits are compared.
 
 - Myeongseok Ryu
 - 2025.04.14
@@ -55,7 +66,7 @@ def main():
 ╠═══════════════════════════════════════════════╣
 ║ Developed by Myeongseok Ryu on April 14, 2025 ║
 ║ Contact: dding_98@kaist.ac.kr                 ║
-║ Version 1.1 (Date: May 25, 2025)              ║   
+║ Version 1.2 (Date: Jun 08, 2025)              ║   
 ╚═══════════════════════════════════════════════╝
 
 DISCRIPTION:
@@ -134,6 +145,8 @@ Please confirm the above information is correct and press Enter to continue or C
         # compile_tex("tmp2.tex")
         run_terminal_command(f"latexdiff --flatten tmp2.tex tmp1.tex > diff.tex")
         compile_tex("diff.tex")
+        save_PDF = f"diff_{commit1[0:6]}_{commit2[0:6]}.pdf"
+        run_terminal_command(f"mv diff.pdf {save_PDF}")
 
         # -----------------------------
         # Terminate the process and Clean up
@@ -147,7 +160,7 @@ Please confirm the above information is correct and press Enter to continue or C
 ║             Successfully Generated!           ║
 ╠═══════════════════════════════════════════════╣             
 ║ The LaTeX diff PDF file is ready:             ║
-║  - {CURRENT_DIR}/diff.pdf                
+║  - {CURRENT_DIR}/{save_PDF}
 ║ All temporary files have been cleaned up.     ║
 ╚═══════════════════════════════════════════════╝
 """)
