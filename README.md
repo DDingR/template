@@ -12,7 +12,7 @@ This template is made for following objectives:
 
 Add this template using the following line.
 ```bash
-$ git submodule add https://gitlab.com/dding_friends/dding_template.git    
+$ git submodule add https://github.com/KAIST-MIC-Lab/template.git    
 ```
 
 Initialize and update the lastest template.
