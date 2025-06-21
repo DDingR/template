@@ -48,17 +48,3 @@
 \dottedcontents{section}[2em]{\bfseries}{1.5em}{.75pc}
 \dottedcontents{subsection}[3em]{}{1.7em}{.75pc}
 
-% Insert University logo
-\makeatletter         
-\def\@maketitle{
-    \raggedleft
-    % \includegraphics[height = 8mm]{figs/logo_GIST.png}
-    \includegraphics[height = 8mm]{../template/figs/logo_KAIST.png}
-    \\[5ex]
-    \begin{center}
-        {\Huge \bfseries \@title }\\[4ex] 
-        {\Large  \@author}\\[4ex] 
-        \@date\\[8ex]
-    \end{center}
-}
-\makeatother

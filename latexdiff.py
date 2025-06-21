@@ -18,6 +18,7 @@ VERSION HISTORY:
     - So, you can recognize which commits are compared.
 
 - Myeongseok Ryu
+- dding_98@kaist.ac.kr
 - 2025.04.14
 """
 
