@@ -56,7 +56,7 @@ def main():
 ╠═══════════════════════════════════════════════╣
 ║ Developed by Myeongseok Ryu on Jan. 15, 2024  ║
 ║ Contact: dding_98@kaist.ac.kr                 ║
-║ Version 1.0 (Date: Jan 15, 2025)              ║   
+║ Version 1.0 (Date: Jan 15, 2024)              ║   
 ╚═══════════════════════════════════════════════╝
 	   
 DISCRIPTION:
