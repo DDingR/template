@@ -121,8 +121,8 @@ def my_process(input_bib, output_bib):
     print("\n")
     print("Replacing full publisher names with abbreviations...")
     for full_name, abbr in publisher_abbr.items():
-        print(f"  👨‍🔧 {full_name} -> {abbr}")
-        bib_text = re.sub(r'(\b' + re.escape(full_name) + r'\b)', abbr, bib_text)
+        print(f"  👨‍🔧 {full_name} 👉 {abbr}")
+        bib_text = re.sub(re.escape(full_name), abbr, bib_text)
     
     # Write the modified content to a new file
     with open(output_bib, 'w', encoding='utf-8') as f:
@@ -141,6 +141,7 @@ def main():
 DISCRIPTION:
   - This script processes a .bib file and replaces full publisher names
     with their abbreviations, as defined in the 'publisher_abbr' dictionary.
+  - It searches publishers in the fileds 'journal', 'booktitle', and 'howpublished' of the .bib file.
           
 Let's begin! (Your running in {CURRENT_DIR})
         """)
