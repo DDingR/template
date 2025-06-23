@@ -1,8 +1,18 @@
 
-\newcommand{\KHCH}[1]{{\color{RoyalPurple} [KH: #1]}} % Kyunghwan's
-\newcommand{\MSRY}[1]{{\color{Peach} [MS: #1]}} % Myeongseok's 
-\newcommand{\SHJH}[1]{{\color{green} [SH: #1]}} % Seunghun's 
-\newcommand{\DHHO}[1]{{\color{magenta} [DH: #1]}} % Donghwa's 
+\def\comment{true}
+
+\newcommand{\KHCH}[1]{
+    \ifx \cmt\comment{\color{RoyalPurple} [KH: #1]}\else{}\fi
+} % Kyunghwan's
+\newcommand{\MSRY}[1]{
+    \ifx \cmt\comment{\color{Peach} [MS: #1]}\else{}\fi
+} % Myeongseok's 
+\newcommand{\SHJH}[1]{
+    \ifx \cmt\comment{\color{green} [SH: #1]}\else{}\fi
+} % Seunghun's
+\newcommand{\DHHO}[1]{
+    \ifx \cmt\comment{\color{magenta} [DH: #1]}\else{}\fi
+} % Donghwa's
 
 \newcommand{\etal}{\textit{et~al.\ }}
 \newcommand\eg{\textrm{e.g.,\ }}

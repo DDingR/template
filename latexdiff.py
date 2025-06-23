@@ -16,7 +16,9 @@ VERSION HISTORY:
 - Version 1.2 (Date: 2025.06.08)
     - The output file name is now COMMIT1_COMMIT2.pdf
     - So, you can recognize which commits are compared.
-
+- Version 1.3 (Date: 2025.06.23)
+    - When fail to finish the program, diff.tex will remain in the current directory.
+    - You can compile it manually.
 - Myeongseok Ryu
 - dding_98@kaist.ac.kr
 - 2025.04.14
@@ -49,7 +51,8 @@ def compile_tex(file_name):
 def clean_up():
     print("Cleaning up...")
 
-    file_list = ["tmp1.tex", "tmp2.tex", "diff.tex", "tmp1.pdf", "tmp2.pdf", "*.aux", "*.log", "*.out", "*.bbl", "*.blg", "*.run.xml", "*.toc", "*.synctex.gz", "*.fdb_latexmk", "*.fls", "*.spl", "*.dvi"]
+    file_list = ["tmp1.tex", "tmp2.tex", "tmp1.pdf", "tmp2.pdf", "*.aux", "*.log", "*.out", "*.bbl", "*.blg", "*.run.xml", "*.toc", "*.synctex.gz", "*.fdb_latexmk", "*.fls", "*.spl", "*.dvi"]
+    # file_list = ["tmp1.tex", "tmp2.tex", "diff.tex", "tmp1.pdf", "tmp2.pdf", "*.aux", "*.log", "*.out", "*.bbl", "*.blg", "*.run.xml", "*.toc", "*.synctex.gz", "*.fdb_latexmk", "*.fls", "*.spl", "*.dvi"]
     for file in file_list:
         if glob.glob(os.path.join(CURRENT_DIR, file)):
             run_terminal_command(f"cd \"{CURRENT_DIR}\" && rm {file}")
@@ -67,7 +70,7 @@ def main():
 ╠═══════════════════════════════════════════════╣
 ║ Developed by Myeongseok Ryu on April 14, 2025 ║
 ║ Contact: dding_98@kaist.ac.kr                 ║
-║ Version 1.2 (Date: Jun 08, 2025)              ║   
+║ Version 1.3 (Date: Jun 23, 2025)              ║   
 ╚═══════════════════════════════════════════════╝
 
 DISCRIPTION:
@@ -183,6 +186,9 @@ Please confirm the above information is correct and press Enter to continue or C
 ║   - Myeongseok Ryu (dding_98@kaist.ac.kr)     ║
 ╚═══════════════════════════════════════════════╝
 """)
+        
+        save_tex = f"diff_{commit1[0:6]}_{commit2[0:6]}.tex"
+        run_terminal_command(f"mv diff.tex {save_tex}")
         clean_up()
 
 if __name__ == "__main__":
