@@ -1,11 +1,26 @@
 % ============================================
 %         General Packages
 % ============================================
+\usepackage{balance}
+
 \usepackage{kotex}      % for Korean
 \usepackage{lipsum}     % for dummy text
 \usepackage{array}
 
 \usepackage{cite}   % for citation
+% \usepackage[
+%     backend=biber,
+%     % style=authoryear,
+%     % doi=false,
+%     isbn=false,
+%     url=false,
+%     minnames=1,
+%     maxcitenames=2, maxbibnames=6,
+%     % natbib=true,
+%     style=ieee,
+%     sorting=none,
+% ]{biblatex}
+
 \usepackage{amsmath,amsfonts}
 \usepackage{amssymb}
 \usepackage{soul}
@@ -54,16 +69,16 @@
 \fi
 
 
-\usepackage{cleveref}
+% \usepackage{cleveref}
 % \let\etoolboxforlistloop\forlistloop % save the good meaning of \forlistloop
-\usepackage{autonum}
+% \usepackage{autonum}
 % \let\forlistloop\etoolboxforlistloop % restore the good meaning of \forlistloop
 
 \usepackage{algorithm}
 \usepackage{algorithmic}
 
 \usepackage{epsfig}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 
 % MY PACKAGES ===================================
 
@@ -81,3 +96,5 @@
 \let\proof\relax
 \let\endproof\relax
 \usepackage{amsthm}
+\usepackage{lipsum}
+\usepackage{tikz}
