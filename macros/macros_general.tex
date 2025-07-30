@@ -20,3 +20,11 @@
 
 \newcommand{\colorLine}[2]{[\tikz[baseline=(current bounding box.base)]{\draw[color=#1,
 #2,line width=2pt] (0,3pt) -- (1.5em,3pt);}]}
+
+% colors
+% https://latexcolor.com % color list
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
+\newcommand{\ctxt}[2]{{\color{#1}{#2}\color{black}}}
+\newcommand{\cred}[1]{{\ctxt{awesome}{#1}}}
+\newcommand{\cblue}[1]{{\ctxt{airforceblue}{#1}}}
