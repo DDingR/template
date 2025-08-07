@@ -58,13 +58,13 @@ publisher_abbr = {
     "12th International Munich Chassis Symposium 2021": "Munich Chassis Symp. 2021",
     "13th International Symposium on Advanced Vehicle Control (AVEC’16)": "AVEC 2016",
     "14. Internationales Stuttgarter Symposium": "Int. Stuttgarter Symp.",
-    "2004 43rd IEEE Conference on Decision and Control (CDC)": "Proc. IEEE Conf. Decis. Control (CDC), 2004",
-    "2019 IEEE 58th Conference on Decision and Control (CDC)": "Proc. IEEE Conf. Decis. Control (CDC), 2019",
-    "2021 60th IEEE Conference on Decision and Control (CDC)": "Proc. IEEE Conf. Decis. Control (CDC), 2021",
+    "2004 43rd IEEE Conference on Decision and Control (CDC)": "Proc. IEEE Conf. Decis. Control (CDC)",
+    "2019 IEEE 58th Conference on Decision and Control (CDC)": "Proc. IEEE Conf. Decis. Control (CDC)",
+    "2021 60th IEEE Conference on Decision and Control (CDC)": "Proc. IEEE Conf. Decis. Control (CDC)",
     "2006 IEEE Conference on Computer Aided Control System Design, 2006 IEEE International Conference on Control Applications, 2006 IEEE International Symposium on Intelligent Control":
-        "IEEE Conf. CACS, CCA, ISIC, 2006",
-    "2013 Africon": "Africon, 2013",
-    "2019 18th European Control Conference (ECC)": "Eur. Control Conf. (ECC), 2019",
+        "IEEE Conf. CACS, CCA, ISIC",
+    "2013 Africon": "Africon",
+    "2019 18th European Control Conference (ECC)": "Eur. Control Conf. (ECC)",
     "International Conference on Learning Representations": "Int. Conf. Learn. Represent. (ICLR)",
     "Proceedings of Thirty Third Conference on Learning Theory": "Conf. Learn. Theory (COLT), vol. 33",
     "Proceedings of the 34th International Conference on Neural Information Processing Systems": "Adv. Neural Inf. Process. Syst. 34 (NeurIPS)",
@@ -72,7 +72,7 @@ publisher_abbr = {
     "Proceedings of The 33rd International Conference on Machine Learning": "Int. Conf. Mach. Learn. (ICML), vol. 33",
     "Proceedings of the International Conference on Machine Learning": "Int. Conf. Mach. Learn. (ICML)",
     "arXiv preprint arXiv:1705.05502": "arXiv:1705.05502",
-    "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining": "Proc. ACM SIGKDD Int. Conf. Knowl. Discov. Data Min., 2019"
+    "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining": "Proc. ACM SIGKDD Int. Conf. Knowl. Discov. Data Min."
 }
 
 
