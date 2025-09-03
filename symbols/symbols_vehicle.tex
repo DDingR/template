@@ -15,6 +15,7 @@
 \newcommand*{\vly}{y}       % local lateral position of the vehicle
 \newcommand*{\vlp}{\psi}    % local yaw angle of the vehicle
 
+
 \newcommand*{\vgx}{X}       % global longitudinal position of the vehicle
 \newcommand*{\vgy}{Y}       % global lateral position of the vehicle
 \newcommand*{\vgp}{\Psi}    % global yaw angle of the vehicle
@@ -23,12 +24,15 @@
 %         Vehicle Velocity and Acceleration
 % ============================================
 \newcommand*{\vldx}{\dot{x}}    % local longitudinal velocity of the vehicle
+\newcommand*{\vlvx}{V_x}    % (const) local longitudinal velocity of the vehicle
 \newcommand*{\vldy}{\dot{y}}    % local lateral velocity of the vehicle
 \newcommand*{\vldp}{\dot{\psi}}   % local yaw rate of the vehicle
+\newcommand*{\vr}{r}       % local yaw rate of the vehicle
 
 \newcommand*{\vlddx}{\ddot{x}}  % local longitudinal acceleration of the vehicle due to motion
 \newcommand*{\vlddy}{\ddot{y}}  % local lateral acceleration of the vehicle due to motion
 \newcommand*{\vlddp}{\ddot{\psi}}   % yaw acceleration of the vehicle due to motion
+\newcommand*{\vdr}{\dot{r}}       % local yaw acceleration of the vehicle
 
 \newcommand*{\vax}{a_{x}}  % inertial longitudinal acceleration of the vehicle
 \newcommand*{\vay}{a_{y}}  % inertial lateral acceleration of the vehicle
@@ -36,8 +40,8 @@
 % ============================================
 %         Vehicle Geometry
 % ============================================
-\newcommand*{\vdf}{\delta_f} % front wheel steering angle
-\newcommand*{\vdr}{\delta_r} % rear wheel steering angle
+\newcommand*{\vdltf}{\delta_f} % front wheel steering angle
+\newcommand*{\vdltr}{\delta_r} % rear wheel steering angle
 \newcommand*{\vaf}{\alpha_f} % front wheel slip angle
 \newcommand*{\var}{\alpha_r} % rear wheel slip angle
 \newcommand*{\vssa}{\beta} % side slip angle of the vehicle
