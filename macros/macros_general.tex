@@ -1,11 +1,13 @@
 
 \def\comment{true}
-
+\usepackage{soul}
 % colors
 % https://latexcolor.com % color list
 \definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
 \definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
 \definecolor{blush}{rgb}{0.87, 0.36, 0.51}
+\definecolor{britishracinggreen}{rgb}{0.0, 0.26, 0.15}
+\definecolor{cinnabar}{rgb}{0.89, 0.26, 0.2}
 
 \newcommand{\KHCH}[1]{
     \ifx \cmt\comment{\color{RoyalPurple} [KH: #1]}\else{}\fi
@@ -22,6 +24,10 @@
 \newcommand{\JYKI}[1]{
     \ifx \cmt\comment{\color{blush} [JY: #1]}\else{}\fi
 } % Jiyun's
+\newcommand{\NSER}[1]{
+    \ifx \cmt\comment{\color{cinnabar} [NS: #1]}\else{}\fi
+    % \ifx \cmt\comment{\colorbox{airforceblue}{[NS: #1]}}\else{}\fi
+} % Naol's
 
 \newcommand{\etal}{\textit{et~al.\ }}
 \newcommand\eg{\textrm{e.g.,\ }}
