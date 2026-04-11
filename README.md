@@ -1,4 +1,4 @@
-# DDing_Template
+# MIC LaTeX Template
 
 ## About This Template
 
@@ -12,7 +12,7 @@ This template is made for following objectives:
 
 Add this template using the following line.
 ```bash
-$ git submodule add https://gitlab.com/dding_friends/dding_template.git    
+$ git submodule add https://github.com/KAIST-MIC-Lab/template   
 ```
 
 Initialize and update the lastest template.
@@ -57,4 +57,4 @@ This template includes...
 
 ## Authors
 
-- [Ryu Myeongseok](https://gitlab.com/DDingR)
+- Ryu Myeongseok [@DDingR](https://github.com/DDingR)

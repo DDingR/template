@@ -3,31 +3,18 @@
 % ============================================
 \usepackage{balance}
 
-\usepackage{siunitx}    % for SI units
 \usepackage{kotex}      % for Korean
 \usepackage{lipsum}     % for dummy text
 \usepackage{array}
 
 \usepackage{cite}   % for citation
-% \usepackage[
-%     backend=biber,
-%     % style=authoryear,
-%     % doi=false,
-%     isbn=false,
-%     url=false,
-%     minnames=1,
-%     maxcitenames=2, maxbibnames=6,
-%     % natbib=true,
-%     style=ieee,
-%     sorting=none,
-% ]{biblatex}
 
 \usepackage{amsmath,amsfonts}
 \usepackage{amssymb}
 \usepackage{soul}
 
-\def\publish{true}
-\def\draft{false}
+\def\publish{true} % \publish means true
+\def\draft{false}  % \draft means false
 \usepackage{hyperref}
 \ifx \pub\publish % Publish
     \hypersetup{
@@ -99,3 +86,15 @@
 \usepackage{amsthm}
 \usepackage{lipsum}
 \usepackage{tikz}
+
+% 
+\usepackage{titlepic}
+\usepackage{pdfpages}
+\usepackage{etoolbox} % 조건문을 쓰기 위한 패키지
+
+% \dtlink{UUID} 명령어 정의
+\newcommand{\dtlink}[1]{%
+    \ifx \pub\publish % Publish
+    \else % Draft
+        \href{#1}{\textcolor{red}{\textbf{[DevonThink]}}}%
+}
