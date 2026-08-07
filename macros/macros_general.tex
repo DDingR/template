@@ -40,3 +40,22 @@
 \newcommand{\ctxt}[2]{{\color{#1}{#2}\color{black}}}
 \newcommand{\cred}[1]{{\ctxt{awesome}{#1}}}
 \newcommand{\cblue}[1]{{\ctxt{airforceblue}{#1}}}
+
+\newcommand{\surfIcon}[2]{%
+[\tikz[baseline=(current bounding box.base)]{
+    \shade[left color=#1!30, right color=#1!90, opacity=#2]
+        (0,0) -- (1.6em,0.25em) -- (1.6em,0.85em) -- (0,0.6em) -- cycle;
+    \draw[color=#1!80!black, line width=0.35pt]
+        (0,0) -- (1.6em,0.25em) -- (1.6em,0.85em) -- (0,0.6em) -- cycle;
+    \draw[color=#1!60!black, line width=0.25pt, opacity=0.8]
+        (0.4em,0.08em) -- (0.4em,0.68em);
+    \draw[color=#1!60!black, line width=0.25pt, opacity=0.8]
+        (0.8em,0.13em) -- (0.8em,0.73em);
+    \draw[color=#1!60!black, line width=0.25pt, opacity=0.8]
+        (1.2em,0.19em) -- (1.2em,0.79em);
+    \draw[color=#1!60!black, line width=0.25pt, opacity=0.8]
+        (0,0.2em) -- (1.6em,0.45em);
+    \draw[color=#1!60!black, line width=0.25pt, opacity=0.8]
+        (0,0.4em) -- (1.6em,0.65em);
+}]%
+}
